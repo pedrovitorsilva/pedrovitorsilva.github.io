@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-spark: var(--spark);
+  --color-flow: var(--flow);
+  --color-dim: var(--dim);
+  --color-accent: var(--accent);
+}
+
+:root {
+  color-scheme: dark;
+  --background: #1f2320;
+  --foreground: #f8f5de;
+  --surface: #2f341f;
+  --border: rgba(248, 245, 222, 0.16);
+  --spark: #f5c84a;
+  --flow: #d6a61c;
+  --dim: #b7b27d;
+  --accent: #f5c84a;
+  --accent-soft: rgba(245, 200, 74, 0.2);
+  --panel: #2c2f22;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: #fcf8e8;
+  --foreground: #27312a;
+  --surface: #ffffff;
+  --border: rgba(31, 35, 32, 0.16);
+  --spark: #c79a12;
+  --flow: #e7b938;
+  --dim: #6b6b4f;
+  --accent: #e7b938;
+  --accent-soft: rgba(231, 185, 56, 0.16);
+  --panel: #f7f0d3;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.scanlines {
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.text-glow-spark {
+  text-shadow: 0 0 20px rgba(245, 200, 74, 0.28);
+}
+
+.glow-spark {
+  box-shadow:
+    0 0 0 1px rgba(245, 200, 74, 0.2),
+    0 0 40px rgba(245, 200, 74, 0.12);
+}
+
+.flow-dash {
+  stroke-dasharray: 3 3;
+  animation: dashMove 8s linear infinite;
+}
+
+@keyframes dashMove {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.section-card {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.section-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-soft), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--spark);
+  box-shadow: 0 10px 30px rgba(231, 185, 56, 0.16);
+}
+
+.section-card:hover::before {
+  opacity: 1;
+}
+
+.section-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}

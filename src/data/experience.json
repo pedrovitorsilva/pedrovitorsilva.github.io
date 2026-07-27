@@ -1,0 +1,33 @@
+[
+  {
+    "period": "2025 — 2026",
+    "role": "Data Engineer & Backend Developer",
+    "company": "UOL Compass",
+    "highlights": [
+      "Migração AS IS de Data Warehouses e fluxos de GCP e Apache Airflow para infraestrutura AWS/Snowflake.",
+      "Atuação em migração de sistemas legados de instituição financeira para AWS.",
+      "Desenvolvimento e provisionamento de soluções em ambientes AWS, incluindo automação de leads e mensagens via WhatsApp.",
+      "Implementação e adaptação de pipelines ETL/ELT no ecossistema AWS, com manutenção de fluxos de dados e conversões AS IS."
+    ]
+  },
+  {
+    "period": "2024",
+    "role": "Bolsista / Estagiário de Data Science",
+    "company": "UOL Compass",
+    "highlights": [
+      "Participação no Programa de Bolsas Compass UOL com foco em Data Science.",
+      "Desenvolvimento de conhecimentos em análise de dados e computação em nuvem.",
+      "Obtenção da certificação AWS Certified Cloud Practitioner durante o programa."
+    ]
+  },
+  {
+    "period": "2023 — 2024",
+    "role": "Estagiário de TI",
+    "company": "PMVC - Secretaria Municipal de Desenvolvimento Social (SEMDES)",
+    "highlights": [
+      "Desenvolvimento de relatórios, planilhas e dashboards em Power BI para o setor de Vigilância Socioassistencial.",
+      "Integração entre Planilhas Google e Power BI para consumo sincronizado de dados.",
+      "Suporte à tomada de decisão com dados organizados e acessíveis para a secretaria."
+    ]
+  }
+]

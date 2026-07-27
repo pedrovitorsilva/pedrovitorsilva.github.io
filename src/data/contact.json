@@ -1,0 +1,23 @@
+[
+  {
+    "label": "POST",
+    "href": "mailto:pedrovitoros11@gmail.com",
+    "path": "/contact/email",
+    "color": "text-spark border-spark/40 hover:border-spark hover:bg-spark/10",
+    "icon": "email"
+  },
+  {
+    "label": "GET",
+    "href": "https://linkedin.com/in/pedrovitorsilva",
+    "path": "/contact/linkedin",
+    "color": "text-flow border-flow/40 hover:border-flow hover:bg-flow/10",
+    "icon": "linkedin"
+  },
+  {
+    "label": "GET",
+    "href": "https://github.com/pedrovitorsilva",
+    "path": "/contact/github",
+    "color": "text-spark border-spark/40 hover:border-spark hover:bg-spark/10",
+    "icon": "github"
+  }
+]

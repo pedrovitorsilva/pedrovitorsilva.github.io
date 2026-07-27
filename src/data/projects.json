@@ -1,0 +1,26 @@
+[
+  {
+    "title": "s3://realtime-events-pipeline",
+    "description": "Ingestão e processamento de eventos em tempo real com Kafka + Flink, materializando métricas em ClickHouse.",
+    "tags": ["Kafka", "Flink", "ClickHouse", "Docker"],
+    "href": "https://github.com/"
+  },
+  {
+    "title": "s3://lakehouse-architecture",
+    "description": "Data lakehouse com Apache Iceberg sobre S3, catálogo Glue e consultas Athena com particionamento otimizado.",
+    "tags": ["Iceberg", "Athena", "Airflow", "Terraform"],
+    "href": "https://github.com/"
+  },
+  {
+    "title": "s3://analytics-dbt-models",
+    "description": "Camada de transformação com dbt (+120 modelos) e testes de qualidade, servindo métricas para BI.",
+    "tags": ["dbt", "Snowflake", "BigQuery"],
+    "href": "https://github.com/"
+  },
+  {
+    "title": "s3://data-quality-monitor",
+    "description": "Serviço de monitoramento de qualidade de dados com Great Expectations e alertas no Slack.",
+    "tags": ["Python", "Great Expectations", "FastAPI"],
+    "href": "https://github.com/"
+  }
+]
