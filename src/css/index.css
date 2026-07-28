@@ -13,30 +13,30 @@
 
 :root {
   color-scheme: dark;
-  --background: #1f2320;
-  --foreground: #f8f5de;
-  --surface: #2f341f;
-  --border: rgba(248, 245, 222, 0.16);
-  --spark: #f5c84a;
-  --flow: #d6a61c;
-  --dim: #b7b27d;
-  --accent: #f5c84a;
-  --accent-soft: rgba(245, 200, 74, 0.2);
-  --panel: #2c2f22;
+  --background: #1c2a1c;
+  --foreground: #d0e0d0;
+  --surface: #4a6e4a;
+  --border: rgba(208, 224, 208, 0.2);
+  --spark: #8fbc8f;
+  --flow: #6f9f6f;
+  --dim: #a7b8a7;
+  --accent: #8fbc8f;
+  --accent-soft: rgba(143, 188, 143, 0.18);
+  --panel: #3b3b3b;
 }
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --background: #fcf8e8;
-  --foreground: #27312a;
+  --background: #f2f6f2;
+  --foreground: #243124;
   --surface: #ffffff;
-  --border: rgba(31, 35, 32, 0.16);
-  --spark: #c79a12;
-  --flow: #e7b938;
-  --dim: #6b6b4f;
-  --accent: #e7b938;
-  --accent-soft: rgba(231, 185, 56, 0.16);
-  --panel: #f7f0d3;
+  --border: rgba(28, 42, 28, 0.16);
+  --spark: #4a6e4a;
+  --flow: #6f9f6f;
+  --dim: #6a766a;
+  --accent: #4a6e4a;
+  --accent-soft: rgba(74, 110, 74, 0.16);
+  --panel: #e9efe9;
 }
 
 body {
@@ -71,6 +71,43 @@ body {
   background-size: 32px 32px;
 }
 
+.hero-surface {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(143, 188, 143, 0.08),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      var(--background) 0%,
+      rgba(28, 42, 28, 0.92) 58%,
+      rgba(28, 42, 28, 0.98) 100%
+    );
+}
+
+.hero-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.025) 45%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  pointer-events: none;
+}
+
+.section-transition {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(28, 42, 28, 0.12) 45%,
+    rgba(28, 42, 28, 0.28) 100%
+  );
+}
+
 .scanlines {
   background-image: repeating-linear-gradient(
     180deg,
@@ -82,13 +119,13 @@ body {
 }
 
 .text-glow-spark {
-  text-shadow: 0 0 20px rgba(245, 200, 74, 0.28);
+  text-shadow: 0 0 20px rgba(143, 188, 143, 0.28);
 }
 
 .glow-spark {
   box-shadow:
-    0 0 0 1px rgba(245, 200, 74, 0.2),
-    0 0 40px rgba(245, 200, 74, 0.12);
+    0 0 0 1px rgba(143, 188, 143, 0.2),
+    0 0 40px rgba(143, 188, 143, 0.12);
 }
 
 .flow-dash {
@@ -124,7 +161,7 @@ body {
 .section-card:hover {
   transform: translateY(-4px);
   border-color: var(--spark);
-  box-shadow: 0 10px 30px rgba(231, 185, 56, 0.16);
+  box-shadow: 0 10px 30px rgba(143, 188, 143, 0.16);
 }
 
 .section-card:hover::before {

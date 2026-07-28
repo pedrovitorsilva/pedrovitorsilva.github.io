@@ -14,7 +14,7 @@ export function ModelPage() {
       <div className="relative z-10">
         <ThemeToggle />
         <ModelHero />
-        <div className="flex flex-col items-center h-24 relative">
+        <div className="section-transition flex flex-col items-center h-24 relative">
           <div className="relative w-px flex-1 overflow-hidden">
             <svg
               className="absolute inset-0 w-full h-full"

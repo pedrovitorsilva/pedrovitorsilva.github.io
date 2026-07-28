@@ -78,7 +78,7 @@ export function ThemeToggle() {
         )}
       </svg>
       <span className="hidden sm:inline">
-        {theme === "dark" ? "Dark" : "Light"}
+        Mudar Tema
       </span>
     </button>
   );
