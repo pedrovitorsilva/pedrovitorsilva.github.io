@@ -6,10 +6,10 @@
     "href": "https://github.com/"
   },
   {
-    "title": "s3://lakehouse-architecture",
-    "description": "Data lakehouse com Apache Iceberg sobre S3, catálogo Glue e consultas Athena com particionamento otimizado.",
-    "tags": ["Iceberg", "Athena", "Airflow", "Terraform"],
-    "href": "https://github.com/"
+    "title": "MinesweeperGuide",
+    "description": "Uma implementação para solucionar jogos de Campo Minado - Algoritmo AC3 para valores binários.",
+    "tags": ["Problem Solving", "Otimização", "AC3"],
+    "href": "https://github.com/pedrovitorsilva/MinesweeperGuide"
   },
   {
     "title": "s3://analytics-dbt-models",
