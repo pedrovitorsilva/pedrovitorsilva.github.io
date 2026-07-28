@@ -18,32 +18,13 @@ export function ExperienceSection() {
 
       <div className="mt-6">
         <div className="relative pl-0 sm:pl-6">
-          <div className="absolute left-1/2 -translate-x-1/2 sm:left-6 top-0 bottom-0 w-px overflow-hidden">
-            <svg
-              className="absolute inset-0 w-full h-full"
-              preserveAspectRatio="none"
-              viewBox="0 0 2 100"
-            >
-              <line
-                x1="1"
-                y1="0"
-                x2="1"
-                y2="100"
-                stroke="hsl(var(--flow))"
-                strokeWidth="2"
-                className="flow-dash"
-                opacity="0.5"
-              ></line>
-            </svg>
-          </div>
-
           <div className="space-y-6">
             {experiences.map((item, index) => (
               <div
                 key={item.role}
                 className="relative flex justify-center sm:justify-start w-full"
               >
-                <div className="absolute left-1/2 -translate-x-1/2 sm:left-6 z-10 top-7">
+                <div className="absolute left-1/2 -translate-x-1/2 sm:left-6 z-10 top-7 hidden sm:block">
                   <span className="block w-3 h-3 rounded-full border-2 border-flow bg-void"></span>
                 </div>
                 <div
